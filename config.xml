@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"
+	id="com.chensihao.mybook" version="1.0.0">
+
+	<name>Alpha书</name>
+
+	<description>
+		阿尔法书籍系列
+	</description>
+
+	<author href="https://example.com" email="you@example.com">
+		Chensihao
+	</author>
+
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="false" />
+	<preference name="android-minSdkVersion" value="8" />
+	<preference name="android-installLocation" value="preferExternal" />
+
+	<icon src="images/LaunchIcon_h.png" gap:platform="andriod"
+		gap:density="hdpi" />
+	<icon src="images/LaunchIcon_m.png" gap:platform="andriod"
+		gap:density="mdpi" />
+	<icon src="images/LaunchIcon_l.png" gap:platform="andriod"
+		gap:density="ldpi" />
+
+	<icon src="images/LaunchIcon_l.png" gap:platform="blackberry" />
+
+	<gap:splash src="Alpha_Attraction/images/front_page.png"
+		gap:platform="android" />
+	<preference name="splash-screen-duration" value="3000" />
+
+</widget>

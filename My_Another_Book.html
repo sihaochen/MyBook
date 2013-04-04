@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>另外一本书</title>
+<!-- CSS -->
+<link href="jquery-mobile/jquery.mobile-1.0.min.css" rel="stylesheet"
+	type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+
+<!-- JAVA Script -->
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/bookMarkData.js" type="text/javascript"></script>
+<script src="js/bookMark.js" type="text/javascript"></script>
+
+<script src="js/storage.js" type="text/javascript"></script>
+<script src="js/jquery.iosslider.js"></script>
+
+<script src="js/common.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js"
+	type="text/javascript"></script>
+<script src="js/iosslider.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+	var book_mark_book_name = "My Another Book";
+	var book_mark_page_id = "My_Another_Book.html#MyAnotherBook";
+
+	localStorage.setItem("book_mark_book_name", book_mark_book_name);
+	localStorage.setItem("book_mark_page_id", book_mark_page_id);
+	//alert("what I have "+$("#selectmenu").usertype);
+	$(document).ready(function(e) {
+		//alert("debug "+document.getElementById("selectmenu").options[1].text);
+
+	});
+</script>
+
+</head>
+<body onload="jumpToPage(book_mark_page_id,-1);">
+
+	<!-- Testing touch slide page begin -->
+	<div data-role="page" id="MyAnotherBook">
+		<div data-role="header" data-position="fixed" data-theme="d">
+			<a href="index.html#home" rel="external" data-icon="home"
+				id="btn_showhome1" class="ui-btn-middle" data-iconpos="notext">index.html#home</a>
+			<div class="ui-btn-right">
+				<select name="selectmenu" id="selectmenu" data-iconpos="notext"
+					data-native-menu="false" onChange="jumpTo(this)"
+					data-role="listview">
+					<option value="#home"></option>
+					<option value="JumpToPage.html">跳转..</option>
+					<option value="BOOK_MARK">收藏/移除书签</option>
+					<option value="Favorites.html">收藏夹</option>
+					<option value="AboutUs.html">About us</option>
+				</select>
+			</div>
+			<h1>另外一本书</h1>
+		</div>
+		<div data-role="content">
+			<div class="full-width-slider" id="full-width-slider">
+
+				<div class="slider">
+
+					<div class="item">
+						<p>Page 1</p>
+					</div>
+					<div class="item">
+						<p>Page 2</p>
+					</div>
+					<div class="item">
+						<p>Page 3</p>
+					</div>
+					<div class="item">
+						<p>Page 4</p>
+					</div>
+					<div class="item">
+						<p>Page 5</p>
+					</div>
+					<div class="item">
+						<p>Page 6</p>
+
+					</div>
+					<div class="item">
+						<p>Page 7</p>
+
+					</div>
+					<div class="item">
+						<p>Page 8</p>
+
+					</div>
+					<div class="item">
+						<p>Page 9</p>
+
+					</div>
+					<div class="item">
+						<p>Page 10</p>
+
+					</div>
+
+				</div>
+			</div>
+
+			<script type="text/javascript">
+				
+			</script>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="d">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" id="advertisement" data-icon="star"
+						data-rel="dialog" data-iconpos="top">广告位 </a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Testing touch slide page end  -->
+
+</body>
+</html>
